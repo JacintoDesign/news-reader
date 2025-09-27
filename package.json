@@ -1,0 +1,12 @@
+{
+  "name": "news-reader",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Flipboard-like News Reader with React + Vite + Express Proxy for TheNewsApi",
+  "scripts": {
+    "server:install": "npm --prefix server install && npm --prefix web install",
+    "server:dev": "node server/server.js",
+    "web:dev": "npm --prefix web run dev",
+    "dev": "npm run server:dev & npm run web:dev & wait"
+  }
+}
