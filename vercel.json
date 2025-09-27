@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "buildCommand": "npm --prefix web ci && npm --prefix web run build",
+  "outputDirectory": "web/dist",
+  "framework": "vite",
+  "functions": {
+    "api/**/*": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
